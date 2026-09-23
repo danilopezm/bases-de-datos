@@ -1,35 +1,31 @@
 [Volver a Inicio](../README.md)
 
 # UNIDAD 1. SISTEMAS DE INFORMACIÓN
-- [UNIDAD 1. SISTEMAS DE INFORMACIÓN](#unidad-1-sistemas-de-información)
-  - [📂 1.- FICHEROS](#-1--ficheros)
-    - [📝 1.1.- Tipos de ficheros y formatos](#-11--tipos-de-ficheros-y-formatos)
-  - [🗄️ 2.- BASES DE DATOS](#️-2--bases-de-datos)
-    - [🏷️ 2.1.- Tipos de bases de datos](#️-21--tipos-de-bases-de-datos)
-  - [🗄️ 3.- BASES DE DATOS RELACIONALES](#️-3--bases-de-datos-relacionales)
-    - [📝 3.1.- Conceptos](#-31--conceptos)
-    - [📌 3.2.- Otros conceptos más específicos de las bases de datos](#-32--otros-conceptos-más-específicos-de-las-bases-de-datos)
-    - [🖥️ 3.3.- Sistemas Gestores de Bases de Datos (SGBD)](#️-33--sistemas-gestores-de-bases-de-datos-sgbd)
-    - [🏷️ 3.4.- Tipos de SGBD](#️-34--tipos-de-sgbd)
+1. [FICHEROS](#-1--ficheros)
+    - [Tipos de ficheros y formatos](#-11--tipos-de-ficheros-y-formatos)
+2. [BASES DE DATOS](#️-2--bases-de-datos)
+    - [Tipos de bases de datos](#️-21--tipos-de-bases-de-datos)
+3. [BASES DE DATOS RELACIONALES](#️-3--bases-de-datos-relacionales)
+    - [Conceptos](#-31--conceptos)
+    - [Otros conceptos más específicos de las bases de datos](#-32--otros-conceptos-más-específicos-de-las-bases-de-datos)
+    - [Sistemas Gestores de Bases de Datos (SGBD)](#️-33--sistemas-gestores-de-bases-de-datos-sgbd)
+    - [Tipos de SGBD](#️-34--tipos-de-sgbd)
 
-
-
-
-## 📂 1.- FICHEROS
+## 1. Ficheros
 
 Un ordenador almacena muchos tipos de información. Toda esta información se guarda en los **dispositivos de almacenamiento** del ordenador. Para organizarla, se utilizan **ficheros** o **archivos**.  
 
 Los ficheros son estructuras de información creadas por los sistemas operativos para almacenar datos. Cada fichero tiene un **nombre** y una **extensión**, que indica su **formato**.
 
-### 📝 1.1.- Tipos de ficheros y formatos
+### 1.1. Tipos de ficheros y formatos
 
 El **formato** y **tipo de fichero** determinan cómo se interpreta la información que contiene. Un fichero es una **ristra de bits** (ceros y unos), por lo que es necesaria su interpretación para dar sentido a los datos.
 
-#### 📄 1️⃣ Según el contenido
+#### 1.1.1. Según el contenido
 - **Ficheros de texto**: caracteres alfabéticos y números que entiende el ser humano.  
 - **Ficheros binarios**: bits que almacenan sonido, vídeo, imágenes, etc. No se leen directamente como texto.
 
-#### 🗂️ 2️⃣ Según la organización
+#### 1.1.2. Según la organización
 Indica la forma de **acceso a los datos**:
 - **Secuencial**: los datos están uno detrás de otro; para acceder a un dato concreto, se recorren los anteriores.  
 - **Directa**: permite acceder directamente a un dato sin necesidad de leer los anteriores.  
@@ -37,26 +33,25 @@ Indica la forma de **acceso a los datos**:
 
 > ⚠️ Existen variantes que combinan varias organizaciones para optimizar el acceso a los datos.
 
-#### ⚙️ 3️⃣ Según la utilidad
+#### 1.1.3. Según la utilidad
 Indica el **uso del fichero**:
 - **Maestros**: contienen datos fundamentales para la organización. Ejemplo: datos de alumnos de un instituto.  
 - **Movimientos**: almacenan cambios o actualizaciones de los ficheros maestros.  
 - **Históricos**: guardan datos antiguos que ya no se usan en procesos diarios.
 
-
 ![Clasificación de ficheros](img/clasificacion2.jpg)
 
-#### 🏋️‍♂️ Ejercicios sobre ficheros
+#### 1.2. Ejercicios sobre ficheros
 
-**Realiza los siguientes ejercicios:**
+**Ejercicio 1. Abrir un fichero**
 
-#### 1️⃣ Abrir un fichero
-Busca en tu ordenador un fichero con extensión **`.docx`**, ábrelo con el **Bloc de notas**.  
-- ❓ Pregunta: ¿Por qué no se ve bien el contenido del fichero?
+1. Busca en tu ordenador un fichero con extensión `.docx`.
+2. Ábrelo con el **Bloc de notas**.
+3. Responde: ¿por qué no se ve bien el contenido del fichero?
 
+**Ejercicio 2. Tabla de códigos ASCII**
 
-#### 2️⃣ Tabla de códigos ASCII
-📝 **Tabla ASCII**: Es un conjunto estandarizado de códigos numéricos que representan caracteres que una computadora puede entender. Su uso en informática permite almacenar, interpretar y transmitir texto de manera uniforme entre sistemas y dispositivos, garantizando que todos comprendan los mismos caracteres.El contenido de la tabla ASCII es el siguiente:
+La tabla ASCII es un conjunto estandarizado de códigos numéricos que representan caracteres que una computadora puede entender.
 
 - Caracteres de control (0–31 y 127): No se imprimen; se usaban para controlar dispositivos, como el retorno de carro CR o salto de línea LF.
 
@@ -70,14 +65,20 @@ Busca en tu ordenador un fichero con extensión **`.docx`**, ábrelo con el **Bl
   
 - Caracteres extendidos (128–255, en ASCII extendido): Permiten letras acentuadas, símbolos gráficos y otros caracteres especiales.
 
-- ❓ Realiza: Conéctate a **Internet** y busca una **tabla de códigos ASCII de 8 bits** y comprueba las características descritas anteriormente.  
+**Tarea:**  
+Conéctate a Internet y busca una tabla de códigos ASCII de 8 bits. Comprueba las características descritas anteriormente.
 
 
-#### 3️⃣ Identificación de ficheros
-Observa la siguiente **captura de una carpeta en Windows**.  
-- ❓ Indica **el tipo de cada fichero** y **qué contiene**.
+**Ejercicio 3. Identificación de ficheros**
+
+Observa la siguiente captura de una carpeta en Windows:
 
 ![Lista de ficheros](img/Lista.png)
+
+Indica para cada fichero:
+- Su **tipo**.
+- Qué **contiene** o para qué se usa.
+
 
 ## 🗄️ 2.- BASES DE DATOS
 
