@@ -2,31 +2,31 @@
 
 # Unidad 1. Sistemas de información
 
-1. [Ficheros](#1-ficheros)
-   - [Tipos de ficheros y formatos](#11-tipos-de-ficheros-y-formatos)
-2. [Bases de datos](#2-bases-de-datos)
-   - [Tipos de bases de datos](#21-tipos-de-bases-de-datos)
-3. [Bases de datos relacionales](#3-bases-de-datos-relacionales)
-   - [Conceptos](#31-conceptos)
-   - [Otros conceptos más específicos de las bases de datos](#32-otros-conceptos-más-específicos-de-las-bases-de-datos)
-   - [Sistemas Gestores de Bases de Datos (SGBD)](#33-sistemas-gestores-de-bases-de-datos-sgbd)
-   - [Tipos de SGBD](#34-tipos-de-sgbd)
+1. [FICHEROS](#1-ficheros)
+   - [TIPOS DE FICHEROS Y FORMATOS](#11-tipos-de-ficheros-y-formatos)
+2. [BASES DE DATOS](#2-bases-de-datos)
+   - [TIPOS DE BASES DE DATOS](#21-tipos-de-bases-de-datos)
+3. [BASES DE DATOS RELACIONALES](#3-bases-de-datos-relacionales)
+   - [CONCEPTOS](#31-conceptos)
+   - [OTROS CONCEPTOS](#32-otros-conceptos)
+   - [SISTEMAS GESTORES DE BASES DE DATOS (SGBD)](#33-sistemas-gestores-de-bases-de-datos-sgbd)
+   - [TIPOS DE SGBD](#34-tipos-de-sgbd)
 
-## 1. Ficheros
+## 1. FICHEROS
 
 Un ordenador almacena muchos tipos de información. Toda esta información se guarda en los dispositivos de almacenamiento del ordenador. Para organizarla, se utilizan ficheros o archivos.  
 
 Los ficheros son estructuras de información creadas por los sistemas operativos para almacenar datos. Cada fichero tiene un nombre y una extensión, que indica su formato.
 
-### 1.1. Tipos de ficheros y formatos
+### 1.1. TIPOS DE FICHEROS Y FORMATOS
 
 El formato y tipo de fichero determinan cómo se interpreta la información que contiene. Un fichero es una ristra de bits (ceros y unos), por lo que es necesaria su interpretación para dar sentido a los datos.
 
-#### 1.1.1. Según el contenido
+#### 1.1.1. SEGÚN EL CONTENIDO
 - **Ficheros de texto**: caracteres alfabéticos y números que entiende el ser humano.  
 - **Ficheros binarios**: bits que almacenan sonido, vídeo, imágenes, etc. No se leen directamente como texto.
 
-#### 1.1.2. Según la organización
+#### 1.1.2. SEGÚN LA ORGANIZACIÓN
 Indica la forma de acceso a los datos:
 - **Secuencial**: los datos están uno detrás de otro; para acceder a un dato concreto, se recorren los anteriores.  
 - **Directa**: permite acceder directamente a un dato sin necesidad de leer los anteriores.  
@@ -34,7 +34,7 @@ Indica la forma de acceso a los datos:
 
 > ⚠️ Existen variantes que combinan varias organizaciones para optimizar el acceso a los datos.
 
-#### 1.1.3. Según la utilidad
+#### 1.1.3. SEGÚN LA UTILIDAD
 Indica el uso del fichero:
 - **Maestros**: contienen datos fundamentales para la organización. Ejemplo: datos de alumnos de un instituto.  
 - **Movimientos**: almacenan cambios o actualizaciones de los ficheros maestros.  
@@ -67,7 +67,7 @@ Indica el uso del fichero:
 
 
 
-## 2. Bases de datos
+## 2. BASES DE DATOS
 
 Una **Base de datos (BD)** es un conjunto de **datos estructurados** que pertenecen a un mismo contexto. Su función es administrar de forma electrónica grandes cantidades de información.
 
@@ -87,11 +87,11 @@ Anteriormente, se utilizaban ficheros tradicionales (como los vistos en el apart
 > ✅ Las BD solucionan gran parte de estos inconvenientes.
 
 
-### 2.1. Tipos de bases de datos
-
-A lo largo de la historia, las bases de datos han utilizado distintos **modelos** según su evolución tecnológica:
+### 2.1. TIPOS DE BASES DE DATOS
 
 #### Evolución histórica de las bases de datos
+
+A lo largo de la historia, las bases de datos han utilizado distintos modelos según su evolución tecnológica:
 
 **1. Primeros sistemas (años 60–70)**
 
@@ -189,13 +189,13 @@ En este modelo, la información está repartida en distintas localizaciones que 
 
 
 
-## 3. Bases de datos relacionales
+## 3. BASES DE DATOS RELACIONALES
 
 En este curso trabajaremos con bases de datos relacionales y bases de datos no relacionales.  
 Veremos conceptos básicos sobre bases de datos en general y bases de datos relacionales en particular. Las bases de datos no relacionales las veremos a final de curso.
 
 
-### 3.1. Conceptos
+### 3.1. CONCEPTOS
 
 - **Datos:** hechos conocidos que pueden registrarse y tienen un significado.  
   Ejemplo: nombres, números de teléfono y direcciones de personas.
@@ -220,7 +220,7 @@ Veremos conceptos básicos sobre bases de datos en general y bases de datos rela
 ![Tabla](img/Tabla.png)
 
 
-### 3.2. Otros conceptos más específicos de las bases de datos
+### 3.2. OTROS CONCEPTOS
 
 - **Entidades:** Todo aquello de lo cual interesa guardar datos.  
   Ejemplos: Persona, Producto, Animal.  
@@ -261,7 +261,7 @@ Veremos conceptos básicos sobre bases de datos en general y bases de datos rela
     - Cómo se relacionan entre sí
 
 
-### 3.3. Sistemas Gestores de Bases de Datos (SGBD)
+### 3.3. SISTEMAS GESTORES DE BASES DE DATOS (SGBD)
 
 Un Sistema Gestor de Bases de Datos (SGBD) es una aplicación que permite a los usuarios **definir, crear y mantener una base de datos**, proporcionando acceso controlado a la misma.
 
@@ -285,7 +285,7 @@ Un Sistema Gestor de Bases de Datos (SGBD) es una aplicación que permite a los 
 > 💡 La principal herramienta de un SGBD es la **interfaz de usuario**, normalmente mediante **SQL (Structure Query Language)**, un lenguaje estandarizado que permite interactuar con el servidor de manera uniforme.
 
 
-### 3.4. Tipos de SGBD
+### 3.4. TIPOS DE SGBD
 
 Los SGBD se pueden clasificar según el tipo de BD que gestionan (jerárquicas, relacionales, orientadas a objetos…), pero actualmente se suele clasificar según **capacidad y potencia**:
 
