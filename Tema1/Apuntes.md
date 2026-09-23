@@ -10,7 +10,7 @@ unit_title: "Unidad 1. Sistemas de información."
 3. [BASES DE DATOS RELACIONALES](#3-bases-de-datos-relacionales)
    - [CONCEPTOS](#31-conceptos)
    - [OTROS CONCEPTOS](#32-otros-conceptos)
-   - [SISTEMAS GESTORES DE BASES DE DATOS (SGBD)](#33-sistemas-gestores-de-bases-de-datos-sgbd)
+   - [SISTEMAS GESTORES DE BASES DE DATOS](#33-sistemas-gestores-de-bases-de-datos-sgbd)
    - [TIPOS DE SGBD](#34-tipos-de-sgbd)
 
 ## 1. FICHEROS
@@ -41,8 +41,6 @@ Indica el uso del fichero:
 - **Movimientos**: almacenan cambios o actualizaciones de los ficheros maestros.  
 - **Históricos**: guardan datos antiguos que ya no se usan en procesos diarios.
 
-![Clasificación de ficheros](img/clasificacion2.jpg)
-
 #### 📝 Actividades
 
 > **Actividad 1. Abrir un fichero**
@@ -58,6 +56,7 @@ Indica el uso del fichero:
 > - Letras mayúsculas (65–90): A a Z.
 > - Letras minúsculas (97–122): a a z.
 > - Caracteres extendidos (128–255, en ASCII extendido): Permiten letras acentuadas, símbolos gráficos y otros caracteres especiales.
+> 
 > Conéctate a Internet y busca una tabla de códigos ASCII de 8 bits. Comprueba las características descritas anteriormente.
 
 > **Actividad 3. Identificación de ficheros**. 
@@ -84,45 +83,45 @@ Anteriormente, se utilizaban ficheros tradicionales (como los vistos en el apart
   - Permite **servir a múltiples aplicaciones**.  
   - Los datos son **compartidos** por varios usuarios para diversas aplicaciones.
 
-> ⚠️ En un sistema de ficheros tradicional, la información está dispersa en varios archivos y requiere programas adicionales para recuperarla y agruparla.  
-> ✅ Las BD solucionan gran parte de estos inconvenientes.
+> ⚠️ Atención:
+> En un sistema de ficheros tradicional, la información está dispersa en varios archivos y requiere programas adicionales para recuperarla y agruparla.  
 
 
 ### 2.1. TIPOS DE BASES DE DATOS
 
 #### Evolución histórica de las bases de datos
 
-A lo largo de la historia, las bases de datos han utilizado distintos modelos según su evolución tecnológica:
+A lo largo de la historia, las BD han utilizado distintos modelos según su evolución tecnológica:
 
 **1. Primeros sistemas (años 60–70)**
 
-- **Bases de datos jerárquicas**  
+- **BD jerárquicas**  
   - Datos organizados en árbol (padre-hijo).  
   - Ejemplo: IMS de IBM.
 
-- **Bases de datos en red**  
+- **BD en red**  
   - Nodos con múltiples relaciones.  
   - Basadas en CODASYL.
 
-**2. Bases de datos relacionales (años 70–80)**
+**2. BD relacionales (años 70–80)**
 
 - Organizadas en **tablas** con filas y columnas.  
 - Uso de **SQL**.  
 - Ejemplos: Oracle, MySQL, PostgreSQL, SQL Server.
 
-**3. Bases de datos orientadas a objetos (años 80–90)**
+**3. BD orientadas a objetos (años 80–90)**
 
 - Datos almacenados como **objetos** con atributos y métodos.  
 - Útiles en aplicaciones multimedia o CAD.  
 - Ejemplo: ObjectDB.
 
-**4. Bases de datos distribuidas (años 90–2000)**
+**4. BD distribuidas (años 90–2000)**
 
 - Datos repartidos en distintos nodos físicos.  
 - Permiten acceso como si fueran una sola base.  
 - Ejemplo: Oracle Distributed, replicación en MySQL.
 
-**5. Bases de datos NoSQL (2000 en adelante)**
+**5. BD NoSQL (2000 en adelante)**
 
 - Diseñadas para **Big Data** y datos no estructurados.  
 - Principales tipos:  
@@ -131,12 +130,12 @@ A lo largo de la historia, las bases de datos han utilizado distintos modelos se
   - Columnas → Cassandra, HBase.  
   - Grafos → Neo4j, OrientDB.
 
-**6. Bases de datos en la nube (2010 en adelante)**
+**6. BD en la nube (2010 en adelante)**
 
 - Escalables y con pago por uso.  
 - Ejemplos: Amazon RDS, Google BigQuery, Azure SQL Database.
 
-**7. Bases de datos modernas y emergentes**
+**7. BD modernas y emergentes**
 
 - NewSQL → Google Spanner, VoltDB.  
 - En memoria → SAP HANA.  
@@ -144,11 +143,11 @@ A lo largo de la historia, las bases de datos han utilizado distintos modelos se
 - Para IA / vectoriales → Pinecone, Milvus.
 
 
-#### Clasificación de las bases de datos según su ubicación
+#### Clasificación de las BD según su ubicación
 
-Otro modo de clasificar las bases de datos es según dónde se encuentren ubicadas. Veamos las más importantes:
+Otro modo de clasificar las BD es según dónde se encuentren ubicadas. Veamos las más importantes:
 
-**1. Bases de datos locales**
+**1. BD locales**
 
 En este caso, la base de datos y el usuario están en el **mismo ordenador**.
 
@@ -156,7 +155,7 @@ En este caso, la base de datos y el usuario están en el **mismo ordenador**.
 * Funciona bien en modo local siempre que no tenga que almacenar grandes volúmenes de información.
 * Otros ejemplos: SQLite (muy usado en móviles y aplicaciones de escritorio), dBase (uno de los primeros sistemas personales).
 
-**2. Bases de datos centralizadas**
+**2. BD centralizadas**
 
 En los sistemas centralizados, toda la base de datos está en un **único servidor**, al que acceden todos los usuarios.
 
@@ -165,7 +164,7 @@ En los sistemas centralizados, toda la base de datos está en un **único servid
 * Es el sistema más utilizado en empresas actualmente.
 * Ejemplos comerciales: Oracle Database, Microsoft SQL Server, IBM Db2, MySQL Enterprise.
 
-**3. Bases de datos distribuidas**
+**3. BD distribuidas**
 
 En este modelo, la información está repartida en distintas localizaciones que se encuentran conectadas mediante una red y gestionadas por un sistema de bases de datos distribuidas.
 
@@ -173,18 +172,16 @@ En este modelo, la información está repartida en distintas localizaciones que 
 * El sistema gestor se encarga de que los usuarios perciban los datos como si estuvieran en una única base.
 * Ejemplos comerciales: Google Spanner, Amazon Aurora, Microsoft Cosmos DB, CockroachDB, Cassandra (DataStax Enterprise).
 
-<img src="img/clasificacion1.png" alt="Clasificación de las bases de datos" width="400">
-
 #### 📝 Actividades
 
 > **Actividad 4. Comparativa de sistemas**. 
 > Busca en Internet las ventajas y desventajas de:
 > - Sistema de ficheros tradicional
-> - Sistema de bases de datos
+> - Sistema de BD
 > - Reflexiona sobre cuándo es mejor usar uno u otro.
 
-> **Actividad 5. Tipos de datos en bases de datos**.
-> - Busca en Internet un esquema o imagen que te ayude a identificar cada tipo de dato de las bases de datos que hemos visto.  
+> **Actividad 5. Tipos de datos en BD**.
+> - Busca en Internet un esquema o imagen que te ayude a identificar cada tipo de dato de las BD que hemos visto.  
 > - Puedes guardar la imagen para usarla como apunte visual.
 
 
@@ -192,8 +189,8 @@ En este modelo, la información está repartida en distintas localizaciones que 
 
 ## 3. BASES DE DATOS RELACIONALES
 
-En este curso trabajaremos con bases de datos relacionales y bases de datos no relacionales.  
-Veremos conceptos básicos sobre bases de datos en general y bases de datos relacionales en particular. Las bases de datos no relacionales las veremos a final de curso.
+En este curso trabajaremos con BD relacionales y BD no relacionales.  
+Veremos conceptos básicos sobre BD en general y BD relacionales en particular. Las BD no relacionales las veremos a final de curso.
 
 
 ### 3.1. CONCEPTOS
@@ -213,7 +210,8 @@ Veremos conceptos básicos sobre bases de datos en general y bases de datos rela
 
 - **Campo clave:** campo especial que Identifica de forma única cada registro.  
   Ejemplo: el `NIF` es único para cada persona, por lo que puede ser su campo clave.  
-  > ⚠️ Existen distintos tipos de campos clave que se verán más adelante.
+  > ⚠️ Atención:
+  > Existen distintos tipos de campos clave que se verán más adelante.
 
 - **Registro (o tupla):** cada fila de la tabla. Contiene todos los valores de un conjunto de campos para un elemento.  
   Ejemplo: en la tabla `CLIENTES`, un registro puede contener la información de Juan García o Fernando Martínez.
@@ -262,7 +260,7 @@ Veremos conceptos básicos sobre bases de datos en general y bases de datos rela
     - Cómo se relacionan entre sí
 
 
-### 3.3. SISTEMAS GESTORES DE BASES DE DATOS (SGBD)
+### 3.3. SISTEMAS GESTORES DE BASES DE DATOS
 
 Un Sistema Gestor de Bases de Datos (SGBD) es una aplicación que permite a los usuarios **definir, crear y mantener una base de datos**, proporcionando acceso controlado a la misma.
 
@@ -283,7 +281,8 @@ Un Sistema Gestor de Bases de Datos (SGBD) es una aplicación que permite a los 
   - Sistema de **recuperación**, restableciendo la BD tras fallos de hardware o software.  
   - **Diccionario de datos** o catálogo accesible al usuario que describe los datos de la BD.
 
-> 💡 La principal herramienta de un SGBD es la **interfaz de usuario**, normalmente mediante **SQL (Structure Query Language)**, un lenguaje estandarizado que permite interactuar con el servidor de manera uniforme.
+> 💡 Importante:
+> La principal herramienta de un SGBD es la **interfaz de usuario**, normalmente mediante **SQL (Structure Query Language)**, un lenguaje estandarizado que permite interactuar con el servidor de manera uniforme.
 
 
 ### 3.4. TIPOS DE SGBD
