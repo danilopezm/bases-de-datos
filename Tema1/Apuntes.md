@@ -303,5 +303,3 @@ Los SGBD se pueden clasificar según el tipo de BD que gestionan (jerárquicas, 
 
 > - Hoja de ejercicios 1
 > - Hoja de ejercicios 2
-> - Hoja de ejercicios 3
-> - Hoja de ejercicios 4
