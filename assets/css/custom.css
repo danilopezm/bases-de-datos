@@ -18,7 +18,7 @@
 
 /* Asegurar un mínimo de altura para el cuerpo */
 #main_content_wrap {
-  min-height: 60vh; /* al menos 60% de la altura de la ventana */
+  min-height: 100vh; /* al menos 60% de la altura de la ventana */
 }
 
 #main_content_wrap .inner {
