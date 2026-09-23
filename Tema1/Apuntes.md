@@ -58,7 +58,7 @@ Indica el uso del fichero:
 > - Letras minúsculas (97–122): a a z.
 > - Caracteres extendidos (128–255, en ASCII extendido): Permiten letras acentuadas, símbolos gráficos y otros caracteres especiales.
 > 
-> Conéctate a Internet y busca una tabla de códigos ASCII de 8 bits. Comprueba las características descritas anteriormente.
+> Conéctate a Internet y busca una tabla de códigos ASCII de 8 bits. Traduce el texto "Bases de Datos" a binario.
 
 > **Actividad 3. Identificación de ficheros**. 
 > Observa la siguiente captura de una carpeta en Windows:
@@ -176,14 +176,13 @@ En este modelo, la información está repartida en distintas localizaciones que 
 #### 📝 Actividades
 
 > **Actividad 4. Comparativa de sistemas**. 
-> Busca en Internet las ventajas y desventajas de:
+> Investiga acerca de las ventajas y desventajas de:
 > - Sistema de ficheros tradicional
 > - Sistema de BD
-> - Reflexiona sobre cuándo es mejor usar uno u otro.
+> Reflexiona sobre cuándo es mejor usar uno u otro.
 
 > **Actividad 5. Tipos de datos en BD**.
-> - Busca en Internet un esquema o imagen que te ayude a identificar cada tipo de dato de las BD que hemos visto.  
-> - Puedes guardar la imagen para usarla como apunte visual.
+> Investiga sobre los tipos de datos más comunes en las bases de datos relacionales. Puedes utilizar PostgreSQL como referencia, ya que será el sistema gestor de bases de datos que emplearemos. Incluye una breve descripción y un ejemplo de uso para cada tipo de dato. En próximas sesiones profundizaremos en estos conceptos.
 
 
 
