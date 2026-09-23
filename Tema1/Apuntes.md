@@ -182,8 +182,8 @@ En este modelo, la información está repartida en distintas localizaciones que 
 > - Sistema de bases de datos
 > - Reflexiona sobre cuándo es mejor usar uno u otro.
 
-> **Actividad 5. Tipos de datos en bases de datos**
-> - Busca en Internet un **esquema o imagen** que te ayude a identificar cada tipo de dato de las bases de datos que hemos visto.  
+> **Actividad 5. Tipos de datos en bases de datos**.
+> - Busca en Internet un esquema o imagen que te ayude a identificar cada tipo de dato de las bases de datos que hemos visto.  
 > - Puedes guardar la imagen para usarla como apunte visual.
 
 
