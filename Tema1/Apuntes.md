@@ -10,7 +10,7 @@ unit_title: "Unidad 1. Sistemas de información."
 3. [BASES DE DATOS RELACIONALES](#3-bases-de-datos-relacionales)
    - [CONCEPTOS](#31-conceptos)
    - [OTROS CONCEPTOS](#32-otros-conceptos)
-   - [SISTEMAS GESTORES DE BASES DE DATOS](#33-sistemas-gestores-de-bases-de-datos-sgbd)
+   - [SISTEMAS GESTORES DE BASES DE DATOS](#33-sistemas-gestores-de-bases-de-datos)
    - [TIPOS DE SGBD](#34-tipos-de-sgbd)
 
 ## 1. FICHEROS
@@ -33,7 +33,8 @@ Indica la forma de acceso a los datos:
 - **Directa**: permite acceder directamente a un dato sin necesidad de leer los anteriores.  
 - **Indexada**: acceso mediante un índice, facilitando la búsqueda rápida, como el índice de un libro.
 
-> ⚠️ Existen variantes que combinan varias organizaciones para optimizar el acceso a los datos.
+> ⚠️ Atención:
+> Existen variantes que combinan varias organizaciones para optimizar el acceso a los datos.
 
 #### 1.1.3. SEGÚN LA UTILIDAD
 Indica el uso del fichero:
@@ -266,14 +267,14 @@ Un Sistema Gestor de Bases de Datos (SGBD) es una aplicación que permite a los 
 
 #### Servicios que proporciona un SGBD
 
-- **DDL – Data Description Language:**  
+- **DDL (Data Description Language):**  
   - Permite la **definición de la base de datos** mediante el lenguaje de definición de datos.  
   - Especifica la **estructura**, el **tipo de datos** y las **restricciones** que se almacenan en la BD.
 
-- **DML – Data Manipulation Language:**  
+- **DML (Data Manipulation Language):**  
   - Permite **insertar, actualizar, eliminar y consultar** datos mediante el lenguaje de manipulación de datos.
 
-- **DCL – Data Control Language:**  
+- **DCL (Data Control Language):**  
   Proporciona **acceso controlado** mediante:  
   - Sistema de **seguridad**, evitando que usuarios no autorizados accedan a la BD.  
   - Sistema de **integridad**, manteniendo la consistencia de los datos.  
