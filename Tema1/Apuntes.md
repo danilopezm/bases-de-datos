@@ -44,7 +44,7 @@ Indica el uso del fichero:
 
 #### 📝 Actividades
 
-> **Actividad 1. Abrir un fichero**
+> **Actividad 1. Abrir un fichero**.
 > 1. Busca en tu ordenador un fichero con extensión `.docx`.
 > 2. Ábrelo con el Bloc de notas.
 > 3. Responde: ¿por qué no se ve bien el contenido del fichero?
@@ -175,13 +175,12 @@ En este modelo, la información está repartida en distintas localizaciones que 
 
 #### 📝 Actividades
 
-> **Actividad 4. Comparativa de sistemas**. 
-> Investiga acerca de las ventajas y desventajas de:
-> - Sistema de ficheros tradicional
-> - Sistema de BD
-> Reflexiona sobre cuándo es mejor usar uno u otro.
+> **Actividad 4. Comparativa de sistemas**.
+> 
+> Elabora un esquema o mapa conceptual sobre los tipos de bases de datos estudiados.
 
 > **Actividad 5. Tipos de datos en BD**.
+> 
 > Investiga sobre los tipos de datos más comunes en las bases de datos relacionales. Puedes utilizar PostgreSQL como referencia, ya que será el sistema gestor de bases de datos que emplearemos. Incluye una breve descripción y un ejemplo de uso para cada tipo de dato. En próximas sesiones profundizaremos en estos conceptos.
 
 
