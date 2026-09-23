@@ -51,14 +51,8 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">
-          {{ site.title | default: site.github.repository_name }}
-        </p>
-        {% endif %}
-
         <p>
-          <a href="/">Indice</a>
+          <a href="{{ '/' | relative_url }}">Inicio</a>
         </p>
       </footer>
     </div>
